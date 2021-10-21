@@ -1,1 +1,3 @@
-# round-font-glsl-sdf
+# 3d-sdf-font-glsl
+
+Arciform type sdf generator
