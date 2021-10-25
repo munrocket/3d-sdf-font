@@ -3,14 +3,14 @@
 Arciform font type sdf generator
 
 ### Usage
-Creating sdf for text `lick me!\n` from console
+Creating sdf for text `lick me!` from console
 ```
-npm start lick me\\n
+npm start lick me!
 ```
 In your script
 ```
 import { sdf } from '3d-sdf-font';
-console.log(sdf('lick me!\n'))
+console.log(sdf('lick me!\nyes you!'))
 ```
 In browser console
 ```
@@ -19,7 +19,7 @@ let kerning = { 'a': ... }
 \\ copy-paste index.js source code without import and export
 let template = (sdf, scale, tx, ty, tz) => { ...
 \\ print result
-console.log(sdf('how vexingly\\nquick daft\\nzebras jump'));
+console.log(sdf('how vexingly\nquick daft\nzebras jump'));
 ```
 
 ### Add new symbol in font
