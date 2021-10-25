@@ -1,8 +1,12 @@
 {
-  "name": "3d-sdf-font-glsl",
+  "name": "3d-sdf-font",
   "version": "0.0.1",
   "description": "3d sdf font for shaders",
   "main": "index.js",
+  "scripts": {
+    "gen": "cd kerning && python3 gen.py",
+    "start": "node -r esm ./src/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/munrocket/round-font-glsl-sdf.git"
@@ -11,6 +15,7 @@
     "3d",
     "font",
     "sdf",
+    "shader",
     "glsl"
   ],
   "author": "munrocket",
@@ -18,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/munrocket/round-font-glsl-sdf/issues"
   },
-  "homepage": "https://github.com/munrocket/round-font-glsl-sdf#readme"
+  "homepage": "https://github.com/munrocket/round-font-glsl-sdf#readme",
+  "devDependencies": {
+    "esm": "^3.2.25"
+  }
 }
