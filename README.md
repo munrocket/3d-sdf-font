@@ -16,7 +16,7 @@ In browser console
 ```
 \\ copy-paste kerning.js json and assign it to variable kerning
 let kerning = { 'a': ... }
-\\ copy-paste index.js source code without import and export
+\\ copy-paste index.js source code without import, export and console.log
 let template = (sdf, scale, tx, ty, tz) => { ...
 \\ print result
 console.log(sdf('how vexingly\nquick daft\nzebras jump'));
