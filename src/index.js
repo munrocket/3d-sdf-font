@@ -174,6 +174,6 @@ function sdf(str, linespace = 1.15, scale, tx, ty, tz) {
   return template(sdf, scale, tx, ty, tz);
 }
 
-console.log(sdf(process.argv.slice(2).reduce((l, r) => l + ' ' + r, '')));
+console.log(sdf(process.argv.slice(2).reduce((l, r) => l + ' ' + r, '').toLowerCase().replace('\\n', '\n')));
 //console.log(sdf('how vexingly\nquick daft\nzebras jump!'));
 export { sdf };

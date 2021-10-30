@@ -3,31 +3,31 @@
 Arciform font type sdf generator
 
 ### Usage
-Creating sdf for text `lick me!` from console
+Creating sdf for text `Hello world!` from console
+```sh
+npm start Hello\\nworld!
 ```
-npm start lick me!
-```
-In your script
-```
+In your user script
+```js
 import { sdf } from '3d-sdf-font';
-console.log(sdf('lick me!\nyes you!'))
+console.log(sdf('Hello\nworld!'))
 ```
 In browser console
-```
-\\ copy-paste kerning.js json and assign it to variable kerning
-let kerning = { 'a': ... }
-\\ copy-paste index.js source code without import, export and console.log
-let template = (sdf, scale, tx, ty, tz) => { ...
+```js
+\\ copypaste kerning.js json and assign it to variable kerning
+let kerning = { 'a': ... };
+\\ copypaste index.js source code without import, export and console.log
+let template = (sdf, scale, tx, ty, tz) => { ... }
 \\ print result
-console.log(sdf('how vexingly\nquick daft\nzebras jump'));
+console.log(sdf('How vexingly\nquick daft\nzebras jump'));
 ```
 
-### Add new symbol in font
+### How to add new symbol in font
 Create new SDF according to 2pt font letter with origin at left bottom corner
 
-### Update kerning table for font
+### How to update kerning table for font
 Add new symbol in kerning alphabet and run `npm run gen` or
-```
+```sh
 pip3 install pillow
 cd kerning
 python3 gen.py
