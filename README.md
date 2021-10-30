@@ -1,6 +1,8 @@
 # 3d-sdf-font
 
-Arciform font type sdf generator
+Arciform font type sdf generator in glsl
+
+![arciform](https://i.imgur.com/8wdqkK3.jpeg)
 
 ### Usage
 Creating sdf for text `Hello world!` from console
@@ -23,10 +25,8 @@ console.log(sdf('How vexingly\nquick daft\nzebras jump'));
 ```
 
 ### How to add new symbol in font
-Create new SDF according to 2pt font letter with origin at left bottom corner
-
-### How to update kerning table for font
-Add new symbol in kerning alphabet and run `npm run gen` or
+Create new SDF according to 2pt font letter with origin at left bottom corner in Inskape.
+Add new symbol in kerning alphabet in `gen.py` and run `npm run gen` or
 ```sh
 pip3 install pillow
 cd kerning

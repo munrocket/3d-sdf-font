@@ -104,8 +104,6 @@ let charSdf = (c, px) => {
   case 'r': return `
   d = min(d, sdCapsule(p, vec3(${f32(.053+px)}, .035, 0.), vec3(${f32(.053+px)}, .177, 0.), .035)); //r
   d = min(d, sdCappedTorus(vec3((p.x+p.y)*fr, (-p.x+p.y)*fr, p.z) - vec3(${f32((.177+.195+px))}*fr, ${f32(.177-.195-px)}*fr, 0.), vec2(fr, fr), .142, .035));`;
-  //p.x -= 0.032;
-  //p.x = p.x - 0.03 - clamp(p.x-1.8416, -.03, .03);
   case 's': return `
   d = min(d, sdCappedTorus(vec3(-vec2(p.x, p.y)*rm - vec2(),p.z) + vec3(vec2(${f32(.122+px)}, .248)*rm, 0.), rm[1], .071, .035));//s
   d = min(d, sdCappedTorus(vec3(vec2(p.x, p.y)*rm,p.z) - vec3(vec2(${f32(.122+px)}, .106)*rm, 0.), rm[1], .071, .035));`;
@@ -175,5 +173,4 @@ function sdf(str, linespace = 1.15, scale, tx, ty, tz) {
 }
 
 console.log(sdf(process.argv.slice(2).reduce((l, r) => l + ' ' + r, '').toLowerCase().replace('\\n', '\n')));
-//console.log(sdf('how vexingly\nquick daft\nzebras jump!'));
 export { sdf };
